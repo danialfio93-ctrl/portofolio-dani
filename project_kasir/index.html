@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dhanzzq Store - Kasir Akun Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>🎮 Dhanzzq Store</h1>
+        <p class="subtitle">Aplikasi Kasir Akun ML & FF</p>
+
+        <!-- Form Input -->
+        <div class="form-group">
+            <label for="namaPembeli">Nama Pembeli:</label>
+            <input type="text" id="namaPembeli" placeholder="Masukkan nama pembeli">
+        </div>
+
+        <div class="form-group">
+            <label for="pilihanAkun">Pilih Akun Game:</label>
+            <select id="pilihanAkun" onchange="updateHargaAuto()">
+                <option value="" data-harga="0">-- Pilih Akun Game --</option>
+                <optgroup label="Mobile Legends (ML)">
+                    <option value="Akun ML Sultan (Full Skin Collector/Legend)" data-harga="750000">Akun ML Sultan - Rp 750.000</option>
+                    <option value="Akun ML Rank Mythic (Skin Epic Rapi)" data-harga="300000">Akun ML Mythic - Rp 300.000</option>
+                    <option value="Akun ML Smurf (Winrate Tinggi)" data-harga="150000">Akun ML Smurf - Rp 150.000</option>
+                </optgroup>
+                <optgroup label="Free Fire (FF)">
+                    <option value="Akun FF Old (Bundle Hip Hop & Sakura)" data-harga="600000">Akun FF Old Sakurahip - Rp 600.000</option>
+                    <option value="Akun FF Master (Set Sembintang & EVO Gun)" data-harga="350000">Akun FF Master EVO - Rp 350.000</option>
+                    <option value="Akun FF Semi Sultan (Senjata Lengkap)" data-harga="200000">Akun FF Semi Sultan - Rp 200.000</option>
+                </optgroup>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="hargaBarang">Harga Satuan (Rp):</label>
+            <input type="number" id="hargaBarang" placeholder="Harga akan terisi otomatis" readonly>
+        </div>
+
+        <div class="form-group">
+            <label for="jumlahBarang">Jumlah Akun:</label>
+            <input type="number" id="jumlahBarang" value="1" min="1" placeholder="Masukkan jumlah">
+        </div>
+
+        <button onclick="hitungTotal()">Hitung Pembayaran</button>
+
+        <!-- Area Output / Hasil -->
+        <div id="output" class="output-box" style="display: none;">
+            <h3>Struk Pembayaran</h3>
+            <p><strong>Nama Pembeli :</strong> <span id="outNamaPembeli">-</span></p>
+            <p><strong>Akun Dibeli :</strong> <span id="outNamaBarang">-</span></p>
+            <p><strong>Subtotal :</strong> <span id="outSubtotal">-</span></p>
+            <p><strong>Diskon :</strong> <span id="outDiskon">-</span></p>
+            <p><strong>Total Bayar :</strong> <span id="outTotalBayar">-</span></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

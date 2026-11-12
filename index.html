@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="id" data-bs-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio - Dani Dwi Alfio</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+    <!-- NAVBAR MODERN DENGAN LOGO SEKOLAH -->
+    <header class="sticky-top shadow-sm navbar-glass">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container py-1">
+                <a class="navbar-brand d-flex align-items-center gap-2" href="#home">
+                    <div class="school-logo-box d-flex align-items-center justify-content-center rounded-circle bg-primary-subtle p-1">
+                        <img src="assets/img/logo-sekolah.png" alt="Logo SMKN 1 Blitar" width="34" height="34" class="object-fit-contain" onerror="this.style.display='none'; this.nextElementSibling.style.display='inline-block';">
+                        <i class="bi bi-mortarboard-fill text-primary fs-5" style="display: none;"></i>
+                    </div>
+                    <div class="d-flex flex-column lh-1">
+                        <span class="fw-extrabold fs-5 brand-gradient">Dani Dwi Alfio</span>
+                        <small class="text-body-secondary fw-medium" style="font-size: 0.72rem; letter-spacing: 0.5px;">XI TJKT 1 • SMKN 1 BLITAR</small>
+                    </div>
+                </a>
+
+                <div class="d-flex align-items-center order-lg-3 gap-2">
+                    <!-- Tombol Dark/Light Mode -->
+                    <button class="btn btn-outline-secondary btn-sm rounded-circle p-2 lh-1" id="themeToggle" title="Ubah Tema">
+                        <i class="bi bi-moon-stars-fill" id="themeIcon"></i>
+                    </button>
+                    <!-- Hamburger Menu Mobile -->
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu" aria-controls="navMenu" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </div>
+
+                <div class="collapse navbar-collapse" id="navMenu">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0 fw-semibold gap-lg-2">
+                        <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#about">About Me</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#certificates">Sertifikat</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- 1. HERO SECTION -->
+        <section id="home" class="hero-section py-5 d-flex align-items-center">
+            <div class="container py-4">
+                <div class="row align-items-center gy-5">
+                    <div class="col-lg-7 text-center text-lg-start">
+                        <div class="d-inline-flex align-items-center gap-2 bg-primary-subtle text-primary px-3 py-2 rounded-pill mb-3 fw-semibold small shadow-sm">
+                            <span class="badge bg-primary rounded-pill">Absen 15</span>
+                            <span>👋 Selamat Datang di Portofolio Saya</span>
+                        </div>
+                        <h1 class="display-4 fw-extrabold mb-3 tracking-tight">
+                            Halo, Saya <br><span class="brand-gradient">Dani Dwi Alfio</span>
+                        </h1>
+                        <p class="lead text-body-secondary mb-4">
+                            Junior Web Developer & Network Technician dari <strong>SMKN 1 Kota Blitar (XI TJKT 1)</strong>. Berfokus pada pengembangan web modern, administrasi jaringan, dan pengelolaan database.
+                        </p>
+                        <div class="d-flex flex-wrap justify-content-center justify-content-lg-start gap-3">
+                            <a href="#projects" class="btn btn-primary btn-lg px-4 rounded-pill shadow-sm">
+                                <i class="bi bi-folder2-open me-2"></i>Lihat Proyek
+                            </a>
+                            <a href="https://www.instagram.com/dhanzzq1" target="_blank" rel="noopener noreferrer" class="btn btn-instagram btn-lg px-4 rounded-pill text-white shadow-sm">
+                                <i class="bi bi-instagram me-2"></i>@dhanzzq1
+                            </a>
+                        </div>
+                    </div>
+                    <!-- FOTO DIRI -->
+                    <div class="col-lg-5 text-center">
+                        <div class="profile-wrapper mx-auto position-relative">
+                            <img src="assets/img/profile.jpg" alt="Foto Dani Dwi Alfio" class="img-fluid rounded-circle shadow-lg profile-img">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 2. ABOUT ME & SKILLS -->
+        <section id="about" class="py-5 bg-body-secondary">
+            <div class="container py-4">
+                <div class="text-center mb-5">
+                    <span class="text-primary fw-bold text-uppercase small tracking-wider">Profil Diri</span>
+                    <h2 class="fw-extrabold mt-1">Tentang Saya</h2>
+                    <p class="text-body-secondary">Mengenal lebih dekat profil, keahlian teknis, dan riwayat pendidikan saya</p>
+                </div>
+                
+                <div class="row g-4 align-items-stretch">
+                    <!-- Biodata -->
+                    <div class="col-lg-6">
+                        <div class="card border-0 shadow-sm h-100 hover-card rounded-4">
+                            <div class="card-body p-4">
+                                <h4 class="fw-bold mb-3"><i class="bi bi-person-badge text-primary me-2"></i>Biodata Singkat</h4>
+                                <p class="text-body-secondary">
+                                    Saya adalah pelajar dari <strong>SMKN 1 Blitar</strong> jurusan <strong>Teknik Jaringan Komputer dan Telekomunikasi (XI TJKT 1)</strong>. Saya memiliki ketertarikan besar dalam membangun website interaktif serta merancang infrastruktur jaringan komputer yang efisien.
+                                </p>
+                                <ul class="list-group list-group-flush mt-3">
+                                    <li class="list-group-item bg-transparent px-0"><strong>Nama:</strong> Dani Dwi Alfio</li>
+                                    <li class="list-group-item bg-transparent px-0"><strong>No. Absen:</strong> 15</li>
+                                    <li class="list-group-item bg-transparent px-0"><strong>Sekolah:</strong> SMKN 1 Kota Blitar (XI TJKT 1)</li>
+                                    <li class="list-group-item bg-transparent px-0"><strong>Kompetensi:</strong> Teknik Komputer & Jaringan / Web Dev</li>
+                                    <li class="list-group-item bg-transparent px-0">
+                                        <strong>Instagram:</strong> 
+                                        <a href="https://www.instagram.com/dhanzzq1" target="_blank" class="text-decoration-none fw-semibold">
+                                            @dhanzzq1 <i class="bi bi-box-arrow-up-right small"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Keahlian Teknis -->
+                    <div class="col-lg-6">
+                        <div class="card border-0 shadow-sm h-100 hover-card rounded-4">
+                            <div class="card-body p-4">
+                                <h4 class="fw-bold mb-3"><i class="bi bi-lightning-charge text-primary me-2"></i>Keahlian Teknis</h4>
+                                
+                                <div class="mb-3">
+                                    <div class="d-flex justify-content-between mb-1">
+                                        <span class="fw-semibold">HTML5, CSS3 & Bootstrap 5</span>
+                                        <span class="text-primary fw-bold">90%</span>
+                                    </div>
+                                    <div class="progress rounded-pill" style="height: 10px;">
+                                        <div class="progress-bar bg-primary rounded-pill" style="width: 90%"></div>
+                                    </div>
+                                </div>
+
+                                <div class="mb-3">
+                                    <div class="d-flex justify-content-between mb-1">
+                                        <span class="fw-semibold">JavaScript (DOM & Interaktivitas)</span>
+                                        <span class="text-primary fw-bold">80%</span>
+                                    </div>
+                                    <div class="progress rounded-pill" style="height: 10px;">
+                                        <div class="progress-bar bg-info rounded-pill" style="width: 80%"></div>
+                                    </div>
+                                </div>
+
+                                <div class="mb-3">
+                                    <div class="d-flex justify-content-between mb-1">
+                                        <span class="fw-semibold">Administrasi Jaringan (MikroTik & Cisco)</span>
+                                        <span class="text-primary fw-bold">88%</span>
+                                    </div>
+                                    <div class="progress rounded-pill" style="height: 10px;">
+                                        <div class="progress-bar bg-success rounded-pill" style="width: 88%"></div>
+                                    </div>
+                                </div>
+
+                                <div class="mb-3">
+                                    <div class="d-flex justify-content-between mb-1">
+                                        <span class="fw-semibold">Database SQL (MariaDB / MySQL)</span>
+                                        <span class="text-primary fw-bold">82%</span>
+                                    </div>
+                                    <div class="progress rounded-pill" style="height: 10px;">
+                                        <div class="progress-bar bg-warning rounded-pill" style="width: 82%"></div>
+                                    </div>
+                                </div>
+
+                                <div class="mt-4 d-flex flex-wrap gap-2">
+                                    <span class="badge rounded-pill text-bg-primary px-3 py-2">HTML5</span>
+                                    <span class="badge rounded-pill text-bg-secondary px-3 py-2">CSS3</span>
+                                    <span class="badge rounded-pill text-bg-info px-3 py-2">Bootstrap 5</span>
+                                    <span class="badge rounded-pill text-bg-warning px-3 py-2">JavaScript</span>
+                                    <span class="badge rounded-pill text-bg-success px-3 py-2">MikroTik</span>
+                                    <span class="badge rounded-pill text-bg-dark px-3 py-2">SQL</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- RIWAYAT PENDIDIKAN TERPISAH DI BAWAHNYA -->
+                <div class="row mt-4">
+                    <div class="col-12">
+                        <div class="card border-0 shadow-sm hover-card rounded-4">
+                            <div class="card-body p-4">
+                                <h4 class="fw-bold mb-3"><i class="bi bi-mortarboard text-primary me-2"></i>Riwayat Pendidikan</h4>
+                                <div class="row g-4 mt-1">
+                                    <div class="col-md-6">
+                                        <div class="p-3 border rounded-3 bg-body h-100">
+                                            <span class="badge bg-secondary-subtle text-secondary mb-2">2022 – 2025</span>
+                                            <h5 class="fw-bold mb-1">SMPN 1 Sanankulon</h5>
+                                            <p class="text-body-secondary small mb-0">Menyelesaikan pendidikan tingkat sekolah menengah pertama.</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="p-3 border border-primary rounded-3 bg-body h-100">
+                                            <span class="badge bg-primary-subtle text-primary mb-2">2025 – Sekarang</span>
+                                            <h5 class="fw-bold mb-1">SMKN 1 Kota Blitar</h5>
+                                            <p class="text-body-secondary small mb-0">Jurusan Teknik Jaringan Komputer dan Telekomunikasi (XI TJKT 1).</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. SERTIFIKASI & KOMPETENSI -->
+        <section id="certificates" class="py-5">
+            <div class="container py-4">
+                <div class="text-center mb-5">
+                    <span class="text-primary fw-bold text-uppercase small tracking-wider">Lisensi & Uji Keahlian</span>
+                    <h2 class="fw-extrabold mt-1">Sertifikasi & Kompetensi</h2>
+                    <p class="text-body-secondary">Bukti kelulusan uji kompetensi dan lisensi keahlian resmi</p>
+                </div>
+
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <div class="card border-0 shadow-sm overflow-hidden hover-card rounded-4">
+                            <div class="row g-0 align-items-center">
+                                <div class="col-md-5 bg-light text-center p-3">
+                                    <img src="assets/img/sertifikat.jpg" alt="Sertifikat Kompetensi Dani Dwi Alfio" class="img-fluid rounded-3 shadow-sm cert-thumb" style="max-height: 260px; object-fit: cover;">
+                                </div>
+                                <div class="col-md-7">
+                                    <div class="card-body p-4">
+                                        <span class="badge bg-success rounded-pill px-3 py-1 mb-2"><i class="bi bi-patch-check-fill me-1"></i>Predikat: Kompeten</span>
+                                        <h4 class="card-title fw-bold">Sertifikat Kompetensi Keahlian (KKNI Level II)</h4>
+                                        <p class="text-primary fw-semibold mb-2">Teknik Komputer dan Jaringan</p>
+                                        <p class="card-text small text-body-secondary mb-3">
+                                            Diterbitkan oleh <strong>SMKN 1 Blitar</strong> & Penguji Eksternal <strong>CV. Fia Sejahtera Abadi</strong> pada 23 Juni 2026 (Nomor: 400.3/692/101.6.11.12/2026). Berlaku selama 3 tahun.
+                                        </p>
+                                        <button type="button" class="btn btn-outline-primary btn-sm rounded-pill px-3" data-bs-toggle="modal" data-bs-target="#certModal">
+                                            <i class="bi bi-zoom-in me-1"></i>Lihat Sertifikat Penuh
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. PORTFOLIO / PROJECTS -->
+        <section id="projects" class="py-5 bg-body-secondary">
+            <div class="container py-4">
+                <div class="text-center mb-4">
+                    <span class="text-primary fw-bold text-uppercase small tracking-wider">Hasil Karya</span>
+                    <h2 class="fw-extrabold mt-1">Proyek & Karya Saya</h2>
+                    <p class="text-body-secondary">Beberapa proyek yang telah saya kerjakan di bidang Web & Jaringan</p>
+                </div>
+
+                <!-- Filter Kategori Proyek -->
+                <div class="d-flex justify-content-center gap-2 mb-4 flex-wrap">
+                    <button class="btn btn-primary btn-sm rounded-pill px-4 filter-btn active" data-filter="all">Semua</button>
+                    <button class="btn btn-outline-primary btn-sm rounded-pill px-4 filter-btn" data-filter="web">Web Development</button>
+                    <button class="btn btn-outline-primary btn-sm rounded-pill px-4 filter-btn" data-filter="network">Jaringan & DB</button>
+                </div>
+
+                <div class="row g-4" id="projectGrid">
+                    <!-- Proyek 1 -->
+                    <div class="col-md-6 col-lg-4 project-item" data-category="web">
+                        <div class="card h-100 border-0 shadow-sm project-card hover-card rounded-4 overflow-hidden">
+                            <img src="assets/img/project-1.jpg" class="card-img-top" alt="Dhanzzq Store" style="height: 200px; object-fit: cover;">
+                            <div class="card-body">
+                                <span class="badge bg-primary-subtle text-primary rounded-pill px-3 mb-2">Web Development</span>
+                                <h5 class="card-title fw-bold">Dhanzzq Store Web</h5>
+                                <p class="card-text text-body-secondary small">
+                                    Website etalase digital produk dan layanan game interaktif menggunakan HTML5, CSS3, dan JavaScript.
+                                </p>
+                            </div>
+                            <div class="card-footer bg-transparent border-0 pb-3">
+                                <a href="project_kasir/index.html" target="_blank" class="btn btn-sm btn-primary rounded-pill w-100">
+                                    <i class="bi bi-box-arrow-up-right me-1"></i>Buka Web Kasir
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Proyek 2 -->
+                    <div class="col-md-6 col-lg-4 project-item" data-category="network">
+                        <div class="card h-100 border-0 shadow-sm project-card hover-card rounded-4 overflow-hidden">
+                            <img src="assets/img/project-2.jpg" class="card-img-top" alt="Konfigurasi MikroTik & Cisco" style="height: 200px; object-fit: cover;">
+                            <div class="card-body">
+                                <span class="badge bg-success-subtle text-success rounded-pill px-3 mb-2">Networking</span>
+                                <h5 class="card-title fw-bold">Manajemen Bandwidth & Routing</h5>
+                                <p class="card-text text-body-secondary small">
+                                    Perancangan topologi Static Routing di Cisco Packet Tracer serta limitasi bandwidth menggunakan MikroTik Simple Queues.
+                                </p>
+                            </div>
+                            <div class="card-footer bg-transparent border-0 pb-3">
+                                <a href="#contact" class="btn btn-sm btn-outline-primary rounded-pill w-100">Detail Proyek</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Proyek 3 -->
+                    <div class="col-md-6 col-lg-4 project-item" data-category="network">
+                        <div class="card h-100 border-0 shadow-sm project-card hover-card rounded-4 overflow-hidden">
+                            <img src="assets/img/project-3.jpg" class="card-img-top" alt="Sistem Database Perpustakaan" style="height: 200px; object-fit: cover;">
+                            <div class="card-body">
+                                <span class="badge bg-warning-subtle text-warning-emphasis rounded-pill px-3 mb-2">Database</span>
+                                <h5 class="card-title fw-bold">Sistem Basis Data Perpustakaan</h5>
+                                <p class="card-text text-body-secondary small">
+                                    Perancangan relasi tabel, manajemen hak akses pengguna (DCL), dan query SQL pada MariaDB / phpMyAdmin.
+                                </p>
+                            </div>
+                            <div class="card-footer bg-transparent border-0 pb-3">
+                                <a href="#contact" class="btn btn-sm btn-outline-primary rounded-pill w-100">Detail Proyek</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 5. CONTACT SECTION -->
+        <section id="contact" class="py-5">
+            <div class="container py-4">
+                <div class="text-center mb-5">
+                    <span class="text-primary fw-bold text-uppercase small tracking-wider">Kontak</span>
+                    <h2 class="fw-extrabold mt-1">Hubungi Saya</h2>
+                    <p class="text-body-secondary">Tertarik berkolaborasi atau ingin bertanya? Kirim pesan atau kunjungi Instagram saya</p>
+                </div>
+
+                <div class="row g-4 justify-content-center">
+                    <div class="col-lg-5">
+                        <div class="card border-0 shadow-sm bg-primary text-white h-100 rounded-4">
+                            <div class="card-body p-4 d-flex flex-column justify-content-between">
+                                <div>
+                                    <h4 class="fw-bold mb-3">Informasi Kontak</h4>
+                                    <p class="opacity-75 mb-4">
+                                        Jangan ragu untuk menghubungi saya melalui media sosial atau formulir di samping.
+                                    </p>
+                                    <div class="d-flex align-items-center mb-3">
+                                        <i class="bi bi-geo-alt-fill fs-4 me-3"></i>
+                                        <span>Blitar, Jawa Timur, Indonesia</span>
+                                    </div>
+                                    <div class="d-flex align-items-center mb-3">
+                                        <i class="bi bi-mortarboard-fill fs-4 me-3"></i>
+                                        <span>SMKN 1 Blitar — XI TJKT 1 (Absen: 15)</span>
+                                    </div>
+                                </div>
+
+                                <div class="mt-4">
+                                    <p class="fw-semibold mb-2">Ikuti & DM Instagram Saya:</p>
+                                    <a href="https://www.instagram.com/dhanzzq1" target="_blank" rel="noopener noreferrer" class="btn btn-light text-primary fw-bold w-100 rounded-pill">
+                                        <i class="bi bi-instagram me-2"></i>@dhanzzq1
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6">
+                        <div class="card border-0 shadow-sm h-100 rounded-4">
+                            <div class="card-body p-4">
+                                <form id="contactForm">
+                                    <div class="mb-3">
+                                        <label for="senderName" class="form-label fw-semibold">Nama Lengkap</label>
+                                        <input type="text" class="form-control rounded-3" id="senderName" placeholder="Masukkan nama Anda" required>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="senderEmail" class="form-label fw-semibold">Alamat Email</label>
+                                        <input type="email" class="form-control rounded-3" id="senderEmail" placeholder="nama@email.com" required>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="senderMessage" class="form-label fw-semibold">Pesan</label>
+                                        <textarea class="form-control rounded-3" id="senderMessage" rows="4" placeholder="Tulis pesan Anda di sini..." required></textarea>
+                                    </div>
+                                    <button type="submit" class="btn btn-primary w-100 rounded-pill py-2 fw-semibold">
+                                        <i class="bi bi-send me-2"></i>Kirim Pesan
+                                    </button>
+                                </form>
+                                <div id="formAlert" class="alert alert-success mt-3 d-none" role="alert">
+                                    Terima kasih! Pesan Anda berhasil dikirim.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="py-4 bg-body-tertiary border-top text-center">
+        <div class="container">
+            <div class="mb-2">
+                <a href="https://www.instagram.com/dhanzzq1" target="_blank" class="btn btn-outline-danger btn-sm rounded-circle mx-1" title="Instagram">
+                    <i class="bi bi-instagram"></i>
+                </a>
+                <a href="https://github.com/" target="_blank" class="btn btn-outline-secondary btn-sm rounded-circle mx-1" title="GitHub">
+                    <i class="bi bi-github"></i>
+                </a>
+            </div>
+            <p class="mb-0 small text-body-secondary">
+                &copy; 2026 <strong>Dani Dwi Alfio</strong> (Absen: 15, XI TJKT 1 - SMKN 1 Blitar). Dibuat untuk Tugas Proyek Portofolio Web.
+            </p>
+        </div>
+    </footer>
+
+    <!-- MODAL PREVIEW SERTIFIKAT -->
+    <div class="modal fade" id="certModal" tabindex="-1" aria-labelledby="certModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content rounded-4">
+                <div class="modal-header">
+                    <h5 class="modal-title fw-bold" id="certModalLabel">Sertifikat Kompetensi - Dani Dwi Alfio</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-center bg-light">
+                    <img src="assets/img/sertifikat.jpg" alt="Sertifikat Kompetensi Penuh" class="img-fluid rounded shadow">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="assets/js/script.js"></script>
+</body>
+</html>

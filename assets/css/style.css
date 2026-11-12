@@ -1,0 +1,81 @@
+body {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    scroll-behavior: smooth;
+}
+
+.fw-extrabold {
+    font-weight: 800;
+}
+
+/* Navbar Glassmorphism */
+.navbar-glass {
+    background-color: rgba(var(--bs-body-bg-rgb), 0.85);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+}
+
+/* Bingkai Logo Sekolah */
+.school-logo-box {
+    width: 42px;
+    height: 42px;
+    border: 1px solid rgba(13, 110, 253, 0.25);
+}
+
+/* Gradient Teks Nama */
+.brand-gradient {
+    background: linear-gradient(135deg, #0d6efd 0%, #0dcaf0 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Hero Section */
+.hero-section {
+    min-height: 85vh;
+    background: radial-gradient(circle at top right, rgba(13, 110, 253, 0.08), transparent 50%),
+                radial-gradient(circle at bottom left, rgba(13, 202, 240, 0.08), transparent 50%);
+}
+
+.profile-wrapper {
+    max-width: 310px;
+    padding: 8px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #0d6efd, #0dcaf0);
+}
+
+.profile-img {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    border: 4px solid var(--bs-body-bg);
+}
+
+/* Tombol Instagram */
+.btn-instagram {
+    background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+    border: none;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.btn-instagram:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(220, 39, 67, 0.35);
+}
+
+/* Efek Hover pada Card */
+.hover-card {
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.hover-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.08) !important;
+}
+
+.cert-thumb {
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.cert-thumb:hover {
+    transform: scale(1.03);
+}
